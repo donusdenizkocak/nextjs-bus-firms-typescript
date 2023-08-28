@@ -1,10 +1,13 @@
-import { useState } from 'react';
-import { useRouter } from 'next/router';
 
-const Login = () => {
+import { useRouter } from 'next/router';
+import { useState } from 'react';
+
+export default function Login  (){
+ 
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const router = useRouter();
+  
 
   const handleLogin = () => {
     // Burada kullanıcı adı ve şifrenin doğru olup olmadığını kontrol edin.
@@ -36,4 +39,3 @@ const Login = () => {
   );
 };
 
-export default Login;
